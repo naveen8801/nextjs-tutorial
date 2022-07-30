@@ -37,5 +37,5 @@ export async function getStaticPaths() {
       { params: { id: '5' } },
     ],
     fallback: false,
-  };
+  };S
 }
