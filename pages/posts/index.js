@@ -1,6 +1,11 @@
+import Head from 'next/head';
+
 export default function Posts({ data }) {
   return (
     <div>
+      <Head>
+        <title>Posts</title>
+      </Head>
       <h1>This is page to show getServerSideProps in actions </h1>
       <h2>Visit "posts/[id]" for specifc post </h2>
       <ul>

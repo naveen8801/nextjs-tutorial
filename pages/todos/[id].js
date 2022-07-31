@@ -1,10 +1,14 @@
 import { useRouter } from 'next/router';
+import Head from 'next/head';
 
 export default function ToDo({ data }) {
   const router = useRouter();
 
   return (
     <div>
+      <Head>
+        <title>Todo -{router.query.id} </title>
+      </Head>
       <h2>This is todo with id {router.query.id}</h2>
       <ul>
         <li>{data.id}</li>
@@ -37,5 +41,5 @@ export async function getStaticPaths() {
       { params: { id: '5' } },
     ],
     fallback: false,
-  };S
+  };
 }

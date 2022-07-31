@@ -1,7 +1,12 @@
+import Head from 'next/head';
+
 export default function ToDos(props) {
   const { posts } = props;
   return (
     <div>
+      <Head>
+        <title>Todos</title>
+      </Head>
       <h2>Visit "todos/[id]" for more info</h2>
       <ul>
         {posts &&
